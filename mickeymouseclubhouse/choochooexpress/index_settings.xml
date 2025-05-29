@@ -5,7 +5,7 @@
 	<GeneralSettings>
 	    
 	</GeneralSettings>
-	<SoundsToLoad dir="">
+	<SoundsToLoad dir="./">
 		<sound path="CCE_1.mp3" list="intro" />
     <sound path="CCE_2.mp3" list="intro" />
 		<sound path="CCE_3A.mp3" list="intro" />
