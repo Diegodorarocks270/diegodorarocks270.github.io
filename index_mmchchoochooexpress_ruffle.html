@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<title>Mickey Mouse Clubhouse: Choo-Choo Express Test</title>
+<body>
+<div id="main">
+  </div>
+
+<table border="0" cellspacing="0" cellpadding="0">
+	<tr>
+<!-- CONTENT -->
+	<td width="838" align="center">
+		<table cellspacing="0" cellpadding="0" border="0"><tr>
+		<td width="160" align="center">
+              <div align="right" id="contentleft">
+              <div id='ruffle'></div>
+			  <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+        <script>
+var swfobject = {};
+
+swfobject.embedSWF = function(url, cont, width, height){
+    var ruffle = window.RufflePlayer.newest(),
+        player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
+            width: width,
+            height: height,
+            style: 'width: ' + width + 'px; height: ' + height + 'px',
+        });
+    
+    player.load({ url: url });
+}
+
+swfobject.embedSWF('/mickeymouseclubhouse/choochooexpress/nav.swf?linkXML=/mickeymouseclubhouse/choochooexpress/links.xml', 'ruffle', 160, 422);
+        </script>
+				</div>
+			</td>
+		    <td width="670">
+              <div align="left" id="contentright">
+			  <div id='ruffle'></div>
+			  <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+        <script>
+var swfobject = {};
+
+swfobject.embedSWF = function(url, cont, width, height){
+    var ruffle = window.RufflePlayer.newest(),
+        player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
+            width: width,
+            height: height,
+            style: 'width: ' + width + 'px; height: ' + height + 'px',
+        });
+    
+    player.load({ url: url });
+}
+
+swfobject.embedSWF('/mickeymouseclubhouse/choochooexpress/index.swf?linkXML=/mickeymouseclubhouse/choochooexpress/links.xml&settingsXml=/mickeymouseclubhouse/choochooexpress/index_settings.xml', 'ruffle', 670, 422);
+        </script>
+				</div>
+		</td></tr></table>
+</td>
+</body>
+<center>If you want to test this with just Flash only if you have it, please click or tap <a href="/index_mmchchoochooexpress.html">here.</a></center>
+</html>
