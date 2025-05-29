@@ -1,11 +1,11 @@
 <Settings>
   <SwfsToLoad>
-				<SwfToLoad id="music" path="http://a.dolimg.com/media/en-US/games/nondxdgames/pre_mch_choochooexpress/music.swf" target="none" />
+				<SwfToLoad id="music" path="music.swf" target="none" />
   </SwfsToLoad>
 	<GeneralSettings>
 	    
 	</GeneralSettings>
-	<SoundsToLoad dir="http://a.dolimg.com/media/en-US/games/nondxdgames/pre_mch_choochooexpress/mp3/">
+	<SoundsToLoad dir="mp3/">
 		<sound path="CCE_1.mp3" list="intro" />
     <sound path="CCE_2.mp3" list="intro" />
 		<sound path="CCE_3A.mp3" list="intro" />
