@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<gameitems>
+	<cardback>cardbackpattern.jpg</cardback>
+	
+	<cardset>
+		<id>1</id>
+		<theme>Healthy Foods</theme>
+		<reward>01_video.flv</reward>
+		<secret>sandwich.jpg</secret>
+		<intro>01_intro_healthy_foods.swf</intro>
+		<outro>outro.swf</outro>
+		<link>http://pbskids.org/clifford/</link>
+		<eximage>clifford.png</eximage>
+		<card>food1.jpg</card>
+		<card>food2.jpg</card>
+		<card>food3.jpg</card>
+		<card>food4.jpg</card>	
+	</cardset>
+	
+	<cardset>
+		<id>2</id>
+		<theme>Making Art</theme>
+		<reward>02_video.flv</reward>
+		<secret>paintbrush.jpg</secret>
+		<intro>02_intro_making_art.swf</intro>
+		<outro>outro.swf</outro>
+		<link>http://pbskids.org/curiousgeorge/</link>
+		<eximage>curious.png</eximage>
+		<card>art1.jpg</card>
+		<card>art2.jpg</card>
+		<card>art3.jpg</card>
+		<card>art4.jpg</card>	
+	</cardset>
+	
+	<cardset>
+		<id>3</id>
+		<theme>Safety</theme>
+		<reward>03_video.flv</reward>
+		<secret>helmet.jpg</secret>
+		<intro>03_intro_safty_online.swf</intro>
+		<outro>outro.swf</outro>
+		<link>http://pbskids.org/clifford/</link>
+		<eximage>clifford.png</eximage>
+		<card>safety1.jpg</card>
+		<card>safety2.jpg</card>
+		<card>safety3.jpg</card>
+		<card>safety4.jpg</card>	
+	</cardset>
+	
+	
+	<cardset>
+		<id>4</id>
+		<theme>Transportation</theme>
+		<reward>04_video.flv</reward>
+		<secret>rollerskates.jpg</secret>
+		<intro>04_intro_transportation.swf</intro>
+		<outro>outro.swf</outro>
+		<link>http://pbskids.org/superwhy/</link>
+		<eximage>superwhy.png</eximage>
+		<card>transport1.jpg</card>
+		<card>transport2.jpg</card>
+		<card>transport3.jpg</card>
+		<card>transport4.jpg</card>	
+	</cardset>
+
+	
+	<cardset>
+		<id>5</id>
+		<theme>Who's in the Sea</theme>
+		<reward>05_video.flv</reward>
+		<secret>fish.jpg</secret>
+		<intro>05_intro_sea_creatures.swf</intro>
+		<outro>outro.swf</outro>
+		<link>http://pbskids.org/dragontales/index_sw.html</link>
+		<eximage>dragon.png</eximage>
+		<card>sea1.jpg</card>
+		<card>sea2.jpg</card>
+		<card>sea3.jpg</card>
+		<card>sea4.jpg</card>	
+	</cardset>
+	
+	
+	<cardset>
+		<id>6</id>
+		<theme>Matching Numbers</theme>
+		<reward>06_video.flv</reward>
+		<secret>three.jpg</secret>
+		<intro>06_intro_matching_numbers.swf</intro>
+		<outro>outro.swf</outro>
+		<link>http://pbskids.org/curiousgeorge/</link>
+		<eximage>curious.png</eximage>
+		<card>counting1.jpg</card>
+		<card>counting2.jpg</card>
+		<card>counting3.jpg</card>
+		<card>counting4.jpg</card>	
+	</cardset>
+	
+	
+	<cardset>
+		<id>7</id>
+		<theme>Rhyme Time</theme>
+		<reward>07_video.flv</reward>
+		<secret>plane.jpg</secret>
+		<intro>07_intro_rhyme_time.swf</intro>
+		<outro>outro.swf</outro>
+		<link>http://pbskids.org/superwhy/</link>
+		<eximage>superwhy.png</eximage>
+		<card>rhyme1.jpg</card>
+		<card>rhyme2.jpg</card>
+		<card>rhyme3.jpg</card>
+		<card>rhyme4.jpg</card>	
+	</cardset>
+
+	
+	<cardset>
+		<id>8</id>
+		<theme>Kinds of Time</theme>
+		<reward>08_video.flv</reward>
+		<secret>alarmclock.jpg</secret>
+		<intro>08_intro_kinds_of_time.swf</intro>
+		<outro>outro.swf</outro>
+		<link>http://pbskids.org/dragontales/index_sw.html</link>
+		<eximage>dragon.png</eximage>
+		<card>time1.jpg</card>
+		<card>time2.jpg</card>
+		<card>time3.jpg</card>
+		<card>time4.jpg</card>	
+	</cardset>
+	
+	
+	<cardset>
+		<id>9</id>
+		<theme>People We Meet</theme>
+		<reward>09_video.flv</reward>
+		<secret>policebadge.jpg</secret>
+		<intro>09_intro_people_we_meet.swf</intro>
+		<outro>outro.swf</outro>
+		<link>http://pbskids.org/curiousgeorge/</link>
+		<eximage>curious.png</eximage>
+		<card>people1.jpg</card>
+		<card>people2.jpg</card>
+		<card>people3.jpg</card>
+		<card>people4.jpg</card>	
+	</cardset>
+	
+	
+	<cardset>
+		<id>10</id>
+		<theme>What's in Space?</theme>
+		<reward>10_video.flv</reward>
+		<secret>shootingstar.jpg</secret>
+		<intro>10_intro_whats_in_space.swf</intro>
+		<outro>outro.swf</outro>
+		<link>http://pbskids.org/clifford/</link>
+		<eximage>clifford.png</eximage>
+		<card>space1.jpg</card>
+		<card>space2.jpg</card>
+		<card>space3.jpg</card>
+		<card>space4.jpg</card>	
+	</cardset>
+	
+	
+	<cardset>
+		<id>11</id>
+		<theme>What's On a Safari'</theme>
+		<reward>11_video.flv</reward>
+		<secret>binoculars.jpg</secret>
+		<intro>11_intro_whats_on_safari.swf</intro>
+		<outro>outro.swf</outro>
+		<link>http://pbskids.org/clifford/</link>
+		<eximage>clifford.png</eximage>
+		<card>safari1.jpg</card>
+		<card>safari2.jpg</card>
+		<card>safari3.jpg</card>
+		<card>safari4.jpg</card>	
+	</cardset>
+	
+	
+	<cardset>
+		<id>12</id>
+		<theme>Pets</theme>
+		<reward>12_video.flv</reward>
+		<secret>pethorse.jpg</secret>
+		<intro>12_intro_pets_game.swf</intro>
+		<outro>outro.swf</outro>
+		<link>http://pbskids.org/superwhy/</link>
+		<eximage>superwhy.png</eximage>
+		<card>pets1.jpg</card>
+		<card>pets2.jpg</card>
+		<card>pets3.jpg</card>
+		<card>pets4.jpg</card>	
+	</cardset>
+	
+	
+	<cardset>
+		<id>13</id>
+		<theme>Recycle</theme>
+		<reward>13_video.flv</reward>
+		<secret>recyclebin.jpg</secret>
+		<intro>13_intro_recycle.swf</intro>
+		<outro>outro.swf</outro>
+		<link>http://pbskids.org/curiousgeorge/</link>
+		<eximage>curious.png</eximage>
+		<card>recycle1.jpg</card>
+		<card>recycle2.jpg</card>
+		<card>recycle3.jpg</card>
+		<card>recycle4.jpg</card>	
+	</cardset>
+	
+	
+	<cardset>
+		<id>14</id>
+		<theme>Weather</theme>
+		<reward>14_video.flv</reward>
+		<secret>winterhat.jpg</secret>
+		<intro>14_intro_weather.swf</intro>
+		<outro>outro.swf</outro>
+		<link>http://pbskids.org/dragontales/index_sw.html</link>
+		<eximage>dragon.png</eximage>
+		<card>weather1.jpg</card>
+		<card>weather2.jpg</card>
+		<card>weather3.jpg</card>
+		<card>weather4.jpg</card>	
+	</cardset>
+	
+	
+	<cardset>
+		<id>15</id>
+		<theme>All About Dash</theme>
+		<reward>15_video.flv</reward>
+		<secret>birthdaycake.jpg</secret>
+		<intro>15_intro_about_dash.swf</intro>
+		<outro>outro.swf</outro>
+		<link>http://pbskids.org/clifford/</link>
+		<eximage>clifford.png</eximage>
+		<card>aboutme1.jpg</card>
+		<card>aboutme2.jpg</card>
+		<card>aboutme3.jpg</card>
+		<card>aboutme4.jpg</card>	
+	</cardset>
+	
+</gameitems>
