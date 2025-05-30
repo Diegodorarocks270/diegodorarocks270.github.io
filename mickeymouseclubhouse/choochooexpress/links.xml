@@ -1,8 +1,0 @@
-<XML>
-		 <LINKS rootdir="">
-		 				<LINK id="home" localname="iHome">http://tv.disney.go.com/playhouse/mickeymouseclubhouse/cds/choochooexpress/index.html</LINK>
-						<LINK id="videos" localname="iVideos">http://tv.disney.go.com/playhouse/mickeymouseclubhouse/cds/choochooexpress/video/index.html</LINK>
-		 				<LINK id="game" localname="iGame" >http://tv.disney.go.com/playhouse/mickeymouseclubhouse/cds/choochooexpress/games/index.html</LINK>
-						<LINK id="tips" localname="iTips"  >http://tv.disney.go.com/playhouse/mickeymouseclubhouse/cds/choochooexpress/familynight/index.html</LINK>
-		 </LINKS>
-</XML>
