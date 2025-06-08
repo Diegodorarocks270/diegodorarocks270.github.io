@@ -1,5 +1,0 @@
-<script type="text/javascript">
-    var fosp = new SWFObject("../spinners/spinner_holidays-small.swf", "spinner", "175", "80", "7", "#faf39f");
-    fosp.write("flashspin");
-</script>
-

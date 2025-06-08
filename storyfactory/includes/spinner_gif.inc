@@ -1,3 +1,0 @@
-<div id="flashspin">
-    <img src="../spinners/spinner-halloween.gif" width="175" height="80" alt="halloween spinner">
-</div>
