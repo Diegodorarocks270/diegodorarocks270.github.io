@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Weather Hunters: Weather Explorer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="libs/css/container.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="play-nav">
+      <h1>SpringRoll Test</h1>
+      <div id="play-controls" class="play-controls">
+        <button class="control-btn control-captions" title="Toggle Captions"></button>
+
+        <div class="dropdown audio-drop">
+          <button class="dropdown-toggle" aria-expanded="false" title="Audio Preferences">
+            <span class="icon-audio"></span>
+          </button>
+          <div class="dropdown-panel" style="display: none">
+            <div class="dropdown-panel-header">
+              <div class="dropdown-panel-title">Audio Settings</div>
+              <button class="btn-close" title="Close Panel"></button>
+            </div>
+            <div class="control-block sound">
+              <button class="control-btn control-sound">All Sounds</button>
+            </div>
+            <div class="control-block music">
+              <button class="control-btn control-music">Music</button>
+            </div>
+            <div class="control-block sfx">
+              <button class="control-btn control-sfx">Sound FX</button>
+            </div>
+            <div class="control-block vo">
+              <button class="control-btn control-vo">Voice-Over</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown accessibility-drop" style="display: none">
+          <button class="dropdown-toggle" aria-expanded="false" title="Accessibility Preferences">
+            <span class="icon-accessibility"></span>
+          </button>
+          <div class="dropdown-panel" style="display: none">
+            <div class="dropdown-panel-header">
+              <div class="dropdown-panel-title">Accessibility Preferences</div>
+              <button class="btn-close" title="Close Panel"></button>
+            </div>
+            <div class="control-block captions">
+              <button class="control-btn control-captions">Captions</button>
+            </div>
+            <div class="control-block all-sound">
+              <label for="control-sound-slider" class="soundvolume"> Sound Volume </label>
+              <input type="range" id="control-sound-slider" />
+            </div>
+            <div class="control-block music">
+              <label for="control-music-slider" class="musicvolume"> Music Volume </label>
+              <input type="range" id="control-music-slider" />
+            </div>
+            <div class="control-block sound-fx">
+              <label for="control-sfx-slider" class="sfxvolume"> SFX Volume </label>
+              <input type="range" id="control-sfx-slider" />
+            </div>
+            <div class="control-block voice">
+              <label for="control-vo-slider" class="vovolume"> VO Volume </label>
+              <input type="range" id="control-vo-slider" />
+            </div>
+            <button id="accessibility-reset-btn" class="panel-btn">Reset to defaults</button>
+          </div>
+        </div>
+
+        <button class="control-btn control-pause" title="Play/Pause Game"></button>
+      </div>
+    </nav>
+
+    <div class="iframe-container">
+      <iframe id="sr-container"></iframe>
+    </div>
+
+    <div class="modal-pause-screen" style="display: none">
+      <div class="modal-content">
+        <p>Game is Paused.</p>
+        <button class="button control-pause">Resume</button>
+      </div>
+    </div>
+
+    <script src="libs/js/SpringRoll-Container-umd.js"></script>
+    <script src="libs/js/springroll-accessibility-plugin-umd.js"></script>
+    <script src="libs/js/nav.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        if (window.springroll === undefined || window.springroll.Container === undefined) {
+          throw new Error('Unable to open game, springroll.Container is not defined');
+        }
+
+        var containerOptions = {
+          containerVersion: '2',
+          plugins: [
+            ['CaptionsTogglePlugin', '.control-captions'],
+            ['PausePlugin', '.control-pause'],
+            [
+              'SoundPlugin',
+              {
+                sfxSliders: '#control-sfx-slider',
+                soundButtons: '.control-sound',
+                soundSliders: '#control-sound-slider',
+                musicButtons: '.control-music',
+                musicSliders: '#control-music-slider',
+                voButtons: '.control-vo',
+                voSliders: '#control-vo-slider',
+                sfxButtons: '.control-sfx',
+              },
+            ],
+            ['SpringRollAccessibilityContainerPlugin'],
+            ['UserDataPlugin'],
+          ],
+        };
+        var plugins = [];
+        if (containerOptions.plugins && containerOptions.plugins.length) {
+          for (var i = 0; i < containerOptions.plugins.length; i++) {
+            var pluginName = containerOptions.plugins[i].shift();
+            var plugin = new window.springroll[pluginName](...containerOptions.plugins[i]);
+            plugins.push(plugin);
+          }
+        }
+        var container = new springroll.Container('#sr-container', { plugins });
+
+        // Get query string params
+        var params = new URLSearchParams(window.location.search);
+
+        // Play Options
+        var playOptionsParams = params.get('playOptions');
+        var playOptions = null;
+
+        if (playOptionsParams) {
+          try {
+            playOptions = JSON.parse(playOptionsParams);
+          } catch (e) {} // ignore invalid JSON parse
+        }
+
+        // For older games, we need to pass query string params as part of the gameUrl.
+        params.delete('abOptions');
+        params.delete('debug');
+        params.delete('playOptions');
+
+        var gameUrl = 'game1_data.html';
+        var queryArgs = [];
+
+        for (var [key, val] of params.entries()) {
+          queryArgs.push(key + '=' + val);
+        }
+
+        if (queryArgs.length) {
+          gameUrl += '?' + queryArgs.join('&');
+        }
+
+        console.log('Springroll game URL:', gameUrl);
+        console.log('Springroll game playOptions:', playOptions);
+
+        window.springrollconnect = { container };
+
+        container.client.on('AccessibilityDefaults', (data) => {
+          const event = new CustomEvent('AccessibilityPluginInit', { detail: data });
+          window.dispatchEvent(event);
+        });
+
+        container.openPath(gameUrl, { playOptions: playOptions });
+      });
+    </script>
+  </body>
+</html>
