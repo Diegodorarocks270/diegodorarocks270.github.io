@@ -128,7 +128,7 @@
 
         // Play Options
         var playOptionsParams = params.get('playOptions');
-        var playOptions = null;
+        var playOptions = "language": "en-US";
 
         if (playOptionsParams) {
           try {
@@ -142,7 +142,7 @@
         params.delete('playOptions');
 
         var gameUrl = 'https://springroll-tc.pbskids.org/bbdec82d-f588-4ad8-8728-9b259d187177/efbbefd61551addd05d3b3a6308b0407ba0d75c8/release/index.html';
-        var queryArgs = ["language": "en-US"];
+        var queryArgs = [];
 
         for (var [key, val] of params.entries()) {
           queryArgs.push(key + '=' + val);
